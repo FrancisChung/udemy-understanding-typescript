@@ -10,6 +10,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "lite-sever" : "^.2.5.4"
+    "lite-sever": "^2.5.4"
+  },
+  "dependencies": {
+    "lite-server": "^2.5.4"
   }
 }
