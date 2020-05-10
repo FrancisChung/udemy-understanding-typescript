@@ -1,23 +1,9 @@
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[];
-    role: [number, string];
-} = {
-    name: 'Francis',
-    age: 46,
-    hobbies: ['Basketball', 'Video Games'],
-    role: [2, 'Author' ]
+function add(n1: number, n2:number) {
+    return n1 + n2;
 }
 
-person.role.push('admin');
-person.role.push[0] = 10;
-
-let activities: string[];
-activities = ["Basketball", "Volleyball", "Tennis"];
-
-console.log(person);
-
-for (const act of activities) {
-    console.log(act.toLowerCase());
+function  printResult(num: number):void {
+    console.log('Result: ' + num);
 }
+
+printResult(add(5,12));
