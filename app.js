@@ -12,3 +12,4 @@ function generateError(message, code) {
 }
 const result = generateError('An Error Occurred', 500);
 console.log();
+//# sourceMappingURL=app.js.map

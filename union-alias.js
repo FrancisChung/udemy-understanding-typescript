@@ -13,3 +13,4 @@ console.log(person);
 for (const act of activities) {
     console.log(act.toLowerCase());
 }
+//# sourceMappingURL=union-alias.js.map
