@@ -1,16 +1,8 @@
-let userInput: unknown; //restrictive version of any
-let userName: string;
+let hobbies = ['Sports','Cooking'];
 
-userInput = 51;
-userInput = "Max";
-if (typeof userInput == 'string') {
-    userName = userInput;
-}
+let activeHobbies = ['Hiking'];
+let activeHobbies2 = ['Hiking',...hobbies];
+activeHobbies.push(...hobbies); 
 
-//Never is a newer version of void  
-function generateError(message: string, code: number):never {
-    throw {message: message, errorCode: code}
-}
-
-const result = generateError('An Error Occurred',500);
-console.log()
+console.log(activeHobbies);
+console.log(activeHobbies2);
