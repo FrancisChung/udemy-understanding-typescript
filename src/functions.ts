@@ -1,4 +1,4 @@
-function add(n1: number, n2:number) {
+/* function add(n1: number, n2:number) {
     return n1 + n2;
 }
 
@@ -21,4 +21,4 @@ console.log(combineValues(8,8));
 
 addthenHandle(10, 20, (result) => {
     console.log(result);
-})
+}) */

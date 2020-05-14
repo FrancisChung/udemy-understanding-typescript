@@ -1,4 +1,4 @@
-const person: {
+/* const person: {
     name: string;
     age: number;
     hobbies: string[];
@@ -10,7 +10,7 @@ const person: {
     role: [2, 'Author' ]
 }
 
-person.role.push('admin', 10);
+person.role.push('admin', 10); */
 //person.role.push[1] = 10;
 
 let activities: string[];

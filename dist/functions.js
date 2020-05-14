@@ -1,19 +1,26 @@
 "use strict";
-function add(n1, n2) {
+/* function add(n1: number, n2:number) {
     return n1 + n2;
 }
-function printResult(num) {
+
+function  printResult(num: number):void {
     console.log('Result: ' + num);
 }
-function addthenHandle(n1, n2, cb) {
+
+function addthenHandle(n1 : number, n2: number, cb : (num: number) => void) {
     const result = n1 + n2;
     cb(result);
 }
-printResult(add(5, 12));
-let combineValues;
-combineValues = add;
-console.log(combineValues(8, 8));
+
+printResult(add(5,12));
+
+let combineValues: (a: number, b: number) => number;
+
+combineValues= add;
+
+console.log(combineValues(8,8));
+
 addthenHandle(10, 20, (result) => {
     console.log(result);
-});
+}) */ 
 //# sourceMappingURL=functions.js.map
