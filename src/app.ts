@@ -6,3 +6,11 @@ activeHobbies.push(...hobbies);
 
 console.log(activeHobbies);
 console.log(activeHobbies2);
+
+const person = {
+    name: 'Max',
+    age: 30
+};
+
+const copiedPerson = {...person};
+console.log(copiedPerson);
