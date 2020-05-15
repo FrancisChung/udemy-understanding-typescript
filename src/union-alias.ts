@@ -12,7 +12,7 @@
 
 person.role.push('admin', 10); */
 //person.role.push[1] = 10;
-
+/* 
 let activities: string[];
 activities = ["Basketball", "Volleyball", "Tennis"];
 
@@ -20,4 +20,4 @@ console.log(person);
 
 for (const act of activities) {
     console.log(act.toLowerCase());
-}
+} */
