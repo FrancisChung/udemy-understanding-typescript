@@ -1,35 +1,21 @@
-let hobbies = ['Sports','Cooking', 'Studying', 'Drinking'];
+class Department {
+    name: string;
 
-let activeHobbies = ['Hiking'];
-let activeHobbies2 = ['Hiking',...hobbies];
-activeHobbies.push(...hobbies); 
+    constructor(n: string) {
+        this.name = n;
+    }
 
-console.log(activeHobbies);
-console.log(activeHobbies2);
+    describe(this: Department) {
+        console.log(`Department: ${this.name}`);
+    }
+}
+let dept = new Department("Toy");
+console.log(dept);
 
-const person = {
-    firstname: 'Max',
-    age: 30
-};
+dept.describe();
 
-const copiedPerson = {...person};
-console.log(copiedPerson);
+const toyCopy = {name: "Dummy", describe: dept.describe};
+toyCopy.describe();
 
-const add = (...numbers: number[]) => {
-    return numbers.reduce((curResult, curValue) => {
-        return curResult + curValue;
-    },0);
-};
 
-const addedNumbers = add(5,10,2,3.7);
-console.log(addedNumbers);
-
-const [hobby1, hobby2, ...remainingHobbies] = hobbies;
-console.log(hobby1);
-console.log(hobby2);
-console.log(remainingHobbies);
-
-const {firstname: username, age} = person;
-//console.log(firstname);
-console.log(age);
-console.log(username);
+//# sourceMappingURL=app.js.map
