@@ -17,16 +17,26 @@ class Department {
         console.log(this.employess);
     }
 }
+
+class ITDepartment extends Department {
+    constructor(id: string, public admins: string[]) {
+        super(id, 'IT');
+    }
+}
+
+const ITDept = new ITDepartment("IT1", ["Frank","Max"]);
 let dept = new Department("D1", "Toy");
 console.log(dept);
 
-dept.describe();
+ITDept.describe();
 
-dept.addEmployee("Max");
-dept.addEmployee("Nico");
-dept.addEmployee("Manu");
+ITDept.addEmployee("Max");
+ITDept.addEmployee("Nico");
+ITDept.addEmployee("Manu");
 
-dept.printEmployeeInfo();
+ITDept.printEmployeeInfo();
+
+
 
 // const toyCopy = {name: "Dummy", describe: dept.describe};
 // toyCopy.describe();
