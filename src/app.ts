@@ -19,8 +19,24 @@ class Department {
 }
 
 class ITDepartment extends Department {
+    private lastAdmin : string;
+
+    get RecentAdmin() {
+        if (this.lastAdmin) {
+            return this.lastAdmin
+        }
+
+        return "No Admin"; 
+    }
+
     constructor(id: string, public admins: string[]) {
         super(id, 'IT');
+        this.lastAdmin = "N/A";
+    }
+
+    addAdmin(name:string) {
+        this.admins.push(name);
+        this.lastAdmin = name;
     }
 }
 
@@ -33,6 +49,8 @@ ITDept.describe();
 ITDept.addEmployee("Max");
 ITDept.addEmployee("Nico");
 ITDept.addEmployee("Manu");
+
+ITDept.addEmployee("Stef");
 
 ITDept.printEmployeeInfo();
 
