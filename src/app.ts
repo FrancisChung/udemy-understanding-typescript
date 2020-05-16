@@ -16,6 +16,10 @@ class Department {
         console.log(`Length: ${this.employess.length}`);
         console.log(this.employess);
     }
+
+    static CreateEmployee(name: string) {
+        return {name: name}
+    }
 }
 
 class ITDepartment extends Department {
@@ -38,6 +42,8 @@ class ITDepartment extends Department {
         this.admins.push(name);
         this.lastAdmin = name;
     }
+
+
 }
 
 const ITDept = new ITDepartment("IT1", ["Frank","Max"]);
@@ -53,6 +59,9 @@ ITDept.addEmployee("Manu");
 ITDept.addEmployee("Stef");
 
 ITDept.printEmployeeInfo();
+
+const employee1 = Department.CreateEmployee("Sam");
+console.log(employee1);
 
 
 

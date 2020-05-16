@@ -15,6 +15,9 @@ class Department {
         console.log(`Length: ${this.employess.length}`);
         console.log(this.employess);
     }
+    static CreateEmployee(name) {
+        return { name: name };
+    }
 }
 class ITDepartment extends Department {
     constructor(id, admins) {
@@ -42,6 +45,8 @@ ITDept.addEmployee("Nico");
 ITDept.addEmployee("Manu");
 ITDept.addEmployee("Stef");
 ITDept.printEmployeeInfo();
+const employee1 = Department.CreateEmployee("Sam");
+console.log(employee1);
 // const toyCopy = {name: "Dummy", describe: dept.describe};
 // toyCopy.describe();
 //# sourceMappingURL=app.js.map
