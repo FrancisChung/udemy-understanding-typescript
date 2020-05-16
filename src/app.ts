@@ -1,12 +1,10 @@
-class Department {
+abstract class Department {
     private employess: string[] = [];
 
-    constructor(private readonly id:string, public name: string) {
+    constructor(protected readonly id:string, public name: string) {
     }
 
-    describe(this: Department) {
-        console.log(`Department: ${this.id} ${this.name}`);
-    }
+    abstract describe(this: Department): void;
 
     addEmployee(employee: string) {
         this.employess.push(employee);
@@ -43,12 +41,14 @@ class ITDepartment extends Department {
         this.lastAdmin = name;
     }
 
+    describe () {
+        console.log(`IT Department: ${this.id}`);
+    }
+
 
 }
 
 const ITDept = new ITDepartment("IT1", ["Frank","Max"]);
-let dept = new Department("D1", "Toy");
-console.log(dept);
 
 ITDept.describe();
 

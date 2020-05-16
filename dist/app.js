@@ -5,9 +5,6 @@ class Department {
         this.name = name;
         this.employess = [];
     }
-    describe() {
-        console.log(`Department: ${this.id} ${this.name}`);
-    }
     addEmployee(employee) {
         this.employess.push(employee);
     }
@@ -35,10 +32,11 @@ class ITDepartment extends Department {
         this.admins.push(name);
         this.lastAdmin = name;
     }
+    describe() {
+        console.log(`IT Department: ${this.id}`);
+    }
 }
 const ITDept = new ITDepartment("IT1", ["Frank", "Max"]);
-let dept = new Department("D1", "Toy");
-console.log(dept);
 ITDept.describe();
 ITDept.addEmployee("Max");
 ITDept.addEmployee("Nico");
